@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 16px;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+      input {
+        display: block;
+        width: 100%;
+        margin-bottom: 16px;
+      }
+      button {
+        font-size: 16px;
+      }
+      ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      li {
+        margin-bottom: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Model Preferences</h1>
+    <h2>Add new model</h2>
+    <label for="displayName">Display Name:</label>
+    <input type="text" id="displayName" />
+    <label for="modelUrl">Model URL:</label>
+    <input type="text" id="modelUrl" />
+    <button id="addModel">Add Model</button>
+
+    <h2>Current Models</h2>
+    <ul id="modelList"></ul>
+
+    <script src="options.js"></script>
+  </body>
+</html>
