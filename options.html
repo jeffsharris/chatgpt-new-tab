@@ -6,6 +6,10 @@
         font-family: Arial, sans-serif;
         padding: 16px;
       }
+      .form-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
       label {
         display: block;
         margin-bottom: 8px;
@@ -14,6 +18,7 @@
         display: block;
         width: 100%;
         margin-bottom: 16px;
+        box-sizing: border-box;
       }
       button {
         font-size: 16px;
@@ -21,23 +26,29 @@
       ul {
         list-style-type: none;
         padding: 0;
+        width: 100%;
       }
       li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         margin-bottom: 16px;
       }
     </style>
   </head>
   <body>
     <h1>Model Preferences</h1>
-    <h2>Add new model</h2>
-    <label for="displayName">Display Name:</label>
-    <input type="text" id="displayName" />
-    <label for="modelUrl">Model URL:</label>
-    <input type="text" id="modelUrl" />
-    <button id="addModel">Add Model</button>
+    <div class="form-container">
+      <h2>Add new model</h2>
+      <label for="displayName">Display Name:</label>
+      <input type="text" id="displayName" />
+      <label for="modelUrl">Model URL:</label>
+      <input type="text" id="modelUrl" />
+      <button id="addModel">Add Model</button>
 
-    <h2>Current Models</h2>
-    <ul id="modelList"></ul>
+      <h2>Added Models</h2>
+      <ul id="modelList"></ul>
+    </div>
 
     <script src="options.js"></script>
   </body>
